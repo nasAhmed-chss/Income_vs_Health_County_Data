@@ -1,0 +1,9 @@
+This is a basic Next app:
+
+Commands:
+
+npm install 
+
+npm run dev
+
+That should be sufficient to run the code
