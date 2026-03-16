@@ -27,7 +27,7 @@ export default function BarChart({ data, varKey, width, height, orientation, onT
     svg.selectAll("*").remove();
     svg.attr("width", width).attr("height", height);
 
-    const counts = d3.rollup(data, v=>v.length, d=>String((d as Record<string,unknown>)[varKey]));
+const counts = d3.rollup(data, v => v.length, d => String((d as any)[varKey]));
     const colorInterp = d3.interpolate(COLOR_LIGHT, COLOR_DARK);
     const barColor = (cat: string, i: number, total: number) =>
       varKey === "State" ? (STATE_COLORS[cat] ?? "#93c5fd") : colorInterp(i / Math.max(total - 1, 1));
