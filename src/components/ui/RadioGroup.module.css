@@ -1,0 +1,52 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--ink-light);
+  font-size: 13px;
+  user-select: none;
+  transition: color 0.12s;
+}
+
+.opt:hover { color: var(--ink); }
+
+.opt.active { color: var(--ink); }
+
+/* Outer ring */
+.dot {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  background: var(--surface);
+  transition: border-color 0.15s;
+}
+
+/* Inner fill */
+.dot::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.15s;
+}
+
+.opt.active .dot {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.opt.active .dot::after {
+  background: #ffffff;
+}
+

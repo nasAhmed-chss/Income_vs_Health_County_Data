@@ -1,0 +1,23 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 2px;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.num {
+  background: #e8f4e8;
+  color: #276227;
+  border: 1px solid #b8ddb8;
+}
+
+.cat {
+  background: #e8eef8;
+  color: #1a3a6b;
+  border: 1px solid #b8c8e8;
+}

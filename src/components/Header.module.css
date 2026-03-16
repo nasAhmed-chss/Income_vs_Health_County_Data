@@ -1,0 +1,53 @@
+.header {
+  background: var(--ink);
+  color: #f5f2ee;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a09890;
+  margin-bottom: 3px;
+}
+
+.title {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  color: #f5f2ee;
+}
+
+.divider {
+  width: 1px;
+  height: 36px;
+  background: #3a3630;
+  flex-shrink: 0;
+}
+
+.meta {
+  font-size: 10px;
+  color: #a09890;
+  line-height: 1.6;
+  font-family: var(--mono);
+}
+
+.badge {
+  margin-left: auto;
+  border: 1px solid #3a3630;
+  padding: 4px 12px;
+  border-radius: 2px;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a09890;
+  font-family: var(--mono);
+}

@@ -1,0 +1,65 @@
+/* ── Root app shell ── */
+.app {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+/* ── Main scroll area ── */
+.main {
+  flex: 1;
+  padding: 36px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+/* ── Page header (no top bar — title sits directly) ── */
+.pageHeader {
+  margin-bottom: 4px;
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.pageSub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+/* ── Chart cards — white rounded shadow boxes ── */
+.chartCard {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  padding: 8px 0 16px;
+}
+
+/* ── Scatter wrap fills card width ── */
+.scatterWrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ── Loading state ── */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--muted);
+}

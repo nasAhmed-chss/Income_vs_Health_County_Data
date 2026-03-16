@@ -1,0 +1,5 @@
+.svgWrap {
+  width: 100%;
+  background: var(--surface);
+  overflow: hidden;
+}
