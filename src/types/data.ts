@@ -21,6 +21,7 @@ export interface County {
   "% Adults Reporting Currently Smoking": number | null;
   "% Rural": number | null;
   Population: number | null;
+  [key: string]: string | number | null;
 }
 
 export type VarType = "numerical" | "categorical";
